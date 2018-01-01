@@ -7,3 +7,14 @@ C:\Program Files (x86)\Infralution\.NET Encryptor\Samples\VS2010-2015\C#\Bootstr
 C:\Program Files (x86)\Infralution\.NET Encryptor\Samples\VS2010-2015\C#\BootstrapAnyCPU\obj\Debug\Bootstrap.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Infralution\.NET Encryptor\Samples\VS2010-2015\C#\BootstrapAnyCPU\obj\Debug\Bootstrap.exe
 C:\Program Files (x86)\Infralution\.NET Encryptor\Samples\VS2010-2015\C#\BootstrapAnyCPU\obj\Debug\Bootstrap.pdb
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\bin\Debug\Bootstrap.exe.config
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\bin\Debug\Bootstrap.exe
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\bin\Debug\Bootstrap.pdb
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\bin\Debug\AssemblyLoader4x64.dll
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\bin\Debug\AssemblyLoaderx86.dll
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\obj\Debug\Bootstrap.Properties.Resources.resources
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\obj\Debug\Bootstrap.SplashForm.resources
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\obj\Debug\Bootstrap.csproj.GenerateResource.Cache
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\obj\Debug\Bootstrap.csproj.CoreCompileInputs.cache
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\obj\Debug\Bootstrap.exe
+Z:\DEV\GitHub\NetEncryptorWithRoslyn\BootstrapAnyCPU\obj\Debug\Bootstrap.pdb

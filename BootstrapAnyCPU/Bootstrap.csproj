@@ -6,7 +6,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{3BFD5767-B75C-48A7-A257-3A33C48C6D5E}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Bootstrap</RootNamespace>
     <AssemblyName>Bootstrap</AssemblyName>
@@ -51,14 +51,18 @@
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AssemblyLoader4x64">
-      <HintPath>..\..\..\..\bin\NET4\x64\AssemblyLoader4x64.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\ProcessPlus-Core\theNewPPCore\Third party\Infralution\NetEncryptor\AssemblyLoader4x64.dll</HintPath>
     </Reference>
-    <Reference Include="AssemblyLoader4x86">
-      <HintPath>..\..\..\..\bin\NET4\x86\AssemblyLoader4x86.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="AssemblyLoaderx86">
+      <HintPath>..\..\ProcessPlus-Core\theNewPPCore\Third party\Infralution\NetEncryptor\AssemblyLoaderx86.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -111,16 +115,15 @@
     <PreBuildEvent>NetEncryptor "$(ProjectDir)..\TestScriptingApp\$(OutDir)TestScriptingApp.exe" /outdir:"$(ProjectDir)Assemblies"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>xcopy /S /Y ..\..\..\..\..\..\bin\NET4\* "$(TargetDir)"
-xcopy /S /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)Microsoft.CodeAnalysis.Scripting.dll" "$(TargetDir)"
-xcopy /S /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)Microsoft.CodeAnalysis.CSharp.Scripting.dll" "$(TargetDir)"
-xcopy /S /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)Microsoft.CodeAnalysis.CSharp.dll" "$(TargetDir)"
-xcopy /S /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)Microsoft.CodeAnalysis.dll" "$(TargetDir)"
-xcopy /S /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)System.Collections.Immutable.dll" "$(TargetDir)"
-xcopy /S /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)System.ValueTuple.dll" "$(TargetDir)"
-xcopy /S /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)System.Reflection.Metadata.dll" "$(TargetDir)"
-xcopy /S /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)System.IO.FileSytem.dll" "$(TargetDir)"
-</PostBuildEvent>
+    <PostBuildEvent>xcopy /S /Y "$(ProjectDir)..\bin\NET4\*" "$(TargetDir)"
+xcopy /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)Microsoft.CodeAnalysis.Scripting.dll" "$(TargetDir)"
+xcopy  /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)Microsoft.CodeAnalysis.CSharp.Scripting.dll" "$(TargetDir)"
+xcopy  /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)Microsoft.CodeAnalysis.CSharp.dll" "$(TargetDir)"
+xcopy  /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)Microsoft.CodeAnalysis.dll" "$(TargetDir)"
+xcopy  /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)System.Collections.Immutable.dll" "$(TargetDir)"
+xcopy  /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)System.ValueTuple.dll" "$(TargetDir)"
+xcopy  /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)System.Reflection.Metadata.dll" "$(TargetDir)"
+xcopy  /Y "$(ProjectDir)..\TestScriptingApp\$(OutDir)System.IO.FileSystem.dll" "$(TargetDir)"	</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

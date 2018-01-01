@@ -23,15 +23,9 @@ namespace Bootstrap
                 #if !DEBUG
                 CheckProcessIntegrity();
                 #endif
-                SplashForm.DisplaySplash(500, 500);
-
-                // The test app loads very quickly - so we would not see the splash
-                // screen without a delay.  You can obviously remove or reduce this delay 
-                // for larger applications that take longer to load
-                //
-                Thread.Sleep(500);
+            
                 ExecuteAssembly("TestScriptingApp");
-                SplashForm.CloseSplash();
+
             }
             catch (Exception e)
             {
